@@ -23,7 +23,8 @@ CREATE TABLE IF NOT EXISTS classmates  (
         ('Leli', '2011-03-20','Moscow'),
         ('Surem', '2012-03-20','Moscow'),
         ('Kostya', '2005-02-07','Moscow'),
-        ('Shura', '1993-02-07','Moscow');
+        ('Shura', '1993-02-07','Moscow'),
+        ('Ksysha', '1993-02-08','Moscow');
  
 
 SELECT name FROM classmates WHERE address like 'Moscow' AND birth_date > ADDDATE(CURDATE(),INTERVAL -30 YEAR) AND birth_date <= ADDDATE(CURDATE(),INTERVAL -18 YEAR) ;
