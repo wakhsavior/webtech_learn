@@ -3,7 +3,7 @@ CREATE TABLE IF NOT EXISTS classmates  (
   name TEXT NOT NULL,
   birth_date DATE NOT NULL,
   address TEXT NOT NULL
- );  
+);  
  
  INSERT INTO classmates (name,birth_date,address)
  VALUES ('Denis', '1993-09-23', 'Moscow'),
@@ -18,13 +18,13 @@ CREATE TABLE IF NOT EXISTS classmates  (
  		('Roman', '1996-05-16', 'Nizhnii Novgorod'),
  		('Semen', '1993-02-17','Samara'),
  		('Matvey', '1996-09-20','Novosibirsk'),
-        ('Arsenii', '2012-03-20','Moscow'),
-        ('Misha', '2016-03-20','Kazan'),
-        ('Leli', '2011-03-20','Moscow'),
-        ('Surem', '2012-03-20','Moscow'),
-        ('Kostya', '2005-02-07','Moscow'),
-        ('Shura', '1993-02-07','Moscow'),
-        ('Ksysha', '1993-02-08','Moscow');
+    ('Arsenii', '2012-03-20','Moscow'),
+    ('Misha', '2016-03-20','Kazan'),
+    ('Leli', '2011-03-20','Moscow'),
+    ('Surem', '2012-03-20','Moscow'),
+    ('Kostya', '2005-02-07','Moscow'),
+    ('Shura', '1993-02-07','Moscow'),
+    ('Ksysha', '1993-02-08','Moscow');
  
 
 SELECT name FROM classmates WHERE address like 'Moscow' AND birth_date > ADDDATE(CURDATE(),INTERVAL -30 YEAR) AND birth_date <= ADDDATE(CURDATE(),INTERVAL -18 YEAR) ;

@@ -107,15 +107,15 @@ $experience = [
  
             <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Навыки</b></p>
             <?php 
-            for ($i = 0;$i<count($skills);$i++):
-            ?>
-                <p><?php echo $skills[$i]['name']; ?></p>
-                <div class="w3-light-grey w3-round-xlarge w3-small">
-                  <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]['percent']; ?>%">
-                      <?php echo $skills[$i]['percent']; ?>%
-                  </div>
-                </div>
-            <?php endfor;?>
+                for ($i = 0;$i<count($skills);$i++):
+                ?>
+                    <p><?php echo $skills[$i]['name']; ?></p>
+                    <div class="w3-light-grey w3-round-xlarge w3-small">
+                      <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:<?php echo $skills[$i]['percent']; ?>%">
+                          <?php echo $skills[$i]['percent']; ?>%
+                      </div>
+                    </div>
+                <?php endfor;?>
             <br>
  
             <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Языки</b>
@@ -150,9 +150,9 @@ $experience = [
                 <b><?php echo $experience[$i]['job_title']; ?> </b>
             </h5>
             <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>
-            <?php echo $experience[$i]['start_date']; ?>  - 
-            <?php if ($experience[$i]['end_date']=='Current') {echo '<span class="w3-tag w3-teal w3-round">Current</span>';} 
-                else {echo $experience[$i]['end_date'];} ?>
+                <?php echo $experience[$i]['start_date']; ?>  - 
+                <?php if ($experience[$i]['end_date']=='Current') {echo '<span class="w3-tag w3-teal w3-round">Current</span>';} 
+                    else {echo $experience[$i]['end_date'];} ?>
             </h6>
             <p>
                 <?php echo $experience[$i]['description']; ?>

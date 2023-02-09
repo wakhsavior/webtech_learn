@@ -1,0 +1,44 @@
+
+GET http://reqres.in/api/users&page=1
+
+POST http://reqres.in/api/users
+
+Content-Type: application/json
+
+
+
+<?xml version="1.0"?>
+<books>
+<book>
+    <name>Камищл видит руками</name>
+    <author>Томаш Малковски </author>
+    <pages>146</pages>
+    <year>2019</year>
+    <price>863</price>
+</book>
+<book>
+    <name>Вероятности и неприятности</name>
+    <author>Сергей Самойленко </author>
+    <pages>134</pages>
+    <year>2022</year>
+    <price>1055</price>
+</book>
+
+</books>
+
+[
+  {
+  "name":"Apples",
+  "weight":1000,
+  "group":"Fruits",
+  "price":150,
+  "storage":1
+},
+{
+  "name":"Potatoes",
+  "weight":5000,
+  "group":"Vegetables",
+  "price":320,
+  "storage":2
+}
+]
